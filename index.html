@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar bg-body-tertiary d-flex">
+        <div class="me-auto">
+          <i class="fa-brands fa-instagram"></i>
+          <a class="navbar-brand">Instagram</a>
+        </div>
+
+        <!-- Button trigger modal -->
+        <button
+          type="button"
+          class="btn btn-success me-3"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Create a new post
+        </button>
+
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-gear"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+            <li><a class="dropdown-item" href="#"> Privacy and Data</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item" href="#">
+                <p class="text-danger">Log out</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!--aqui termina los 3 divs-->
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Create a new post
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label p-2"
+                >Caption:</label
+              >
+              <div class="container">
+                <textarea
+                  class="form-control modal-body"
+                  id="message-te"
+                  placeholder="Add the caption of your post here"
+                ></textarea>
+              </div>
+              <div class="mt-2">
+                <i class="fa-solid fa-camera ms-2 btn btn-outline-dark"></i>
+                <i class="fa-solid fa-location-dot btn btn-outline-dark"></i>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+
+              <button type="button" class="btn btn-success">Publish</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--aqui termina el encabezado-->
+
+    <div class="container-fluid">
+      <div class="container d-flex justify-content-center">
+        <i
+          class="fa-solid fa-border-all"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseFotos"
+        ></i>
+
+        <i
+          class="fa-solid fa-square ms-1"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseNegro"
+        ></i>
+      </div>
+    </div>
+
+    <!--aqui empieza la imagenes verticales----------------------------------------------->
+    <div class="container">
+      <div class="collapse" id="collapseNegro">
+        <!--este div contiene todo-->
+        <div class="card">
+          <h5 class="card-title ms-2 mt-3 mb-2">¡Un paisaje muy curioso!</h5>
+          <img src="fotos/38198.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <div>
+              <p class="fs-6 text-black bg-white">1.951 likes</p>
+            </div>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate voluptatibus illo libero eum quia assumenda odit
+              quisquam repellat at. Veniam earum rerum quasi ex hic officiis
+              consectetur. Consequatur, quas ullam!
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <h5 class="card-title ms-2 mt-3 mb-2">¡Un paisaje muy curioso!</h5>
+          <img src="fotos/316452.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <div>
+              <p class="fs-6 text-black bg-white">1.951 likes</p>
+            </div>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate voluptatibus illo libero eum quia assumenda odit
+              quisquam repellat at. Veniam earum rerum quasi ex hic officiis
+              consectetur. Consequatur, quas ullam!
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <h5 class="card-title ms-2 mt-3 mb-2">¡Un paisaje muy curioso!</h5>
+          <img src="fotos/489368.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <div>
+              <p class="fs-6 text-black bg-white">1.951 likes</p>
+            </div>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate voluptatibus illo libero eum quia assumenda odit
+              quisquam repellat at. Veniam earum rerum quasi ex hic officiis
+              consectetur. Consequatur, quas ullam!
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <h5 class="card-title ms-2 mt-3 mb-2">¡Un paisaje muy curioso!</h5>
+          <img
+            src="fotos/pexels-guillaume-meurice-1591447.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <div>
+              <p class="fs-6 text-black bg-white">1.951 likes</p>
+            </div>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate voluptatibus illo libero eum quia assumenda odit
+              quisquam repellat at. Veniam earum rerum quasi ex hic officiis
+              consectetur. Consequatur, quas ullam!
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <h5 class="card-title ms-2 mt-3 mb-2">¡Un paisaje muy curioso!</h5>
+          <img
+            src="fotos/pexels-mingsong-zhai-6513731.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <div>
+              <p class="fs-6 text-black bg-white">1.951 likes</p>
+            </div>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate voluptatibus illo libero eum quia assumenda odit
+              quisquam repellat at. Veniam earum rerum quasi ex hic officiis
+              consectetur. Consequatur, quas ullam!
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--este div contiene todo-------------------------------------------------------->
+    </div>
+    <!--aqui termina las imagenes verticales--------->
+
+    <div class="collapse" id="collapseFotos">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <img src="fotos/38198.jpg" class="img-thumbnail" />
+          </div>
+          <div class="col">
+            <img src="fotos/316452.jpg" class="img-thumbnail" />
+          </div>
+          <div class="col">
+            <img src="fotos/460028.jpg" class="img-thumbnail" />
+          </div>
+          <div class="col">
+            <img src="fotos/489368.jpg" class="img-thumbnail" />
+          </div>
+        </div>
+        <!--primera fila de fotos terminada-->
+        <div class="row">
+          <div class="col">
+            <img src="fotos/pexels-veeterzy-39811.jpg" class="img-thumbnail" />
+          </div>
+          <div class="col">
+            <img
+              src="fotos/pexels-mali-maeder-142497.jpg"
+              class="img-thumbnail"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="fotos/pexels-mingsong-zhai-6513731.jpg"
+              class="img-thumbnail"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="fotos/pexels-mingsong-zhai-6513750.jpg"
+              class="img-thumbnail"
+            />
+          </div>
+        </div>
+        <!--segunda fila de fotos terminada-->
+        <div class="row">
+          <div class="col">
+            <img
+              src="fotos/pexels-nuno-obey-127160.jpg"
+              class="img-thumbnail"
+            />
+          </div>
+          <div class="col">
+            <img src="fotos/pexels-pixabay-235621.jpg" class="img-thumbnail" />
+          </div>
+          <div class="col">
+            <img src="fotos/pexels-pixabay-268533.jpg" class="img-thumbnail" />
+          </div>
+          <div class="col">
+            <img
+              src="fotos/pexels-ray-bilcliff-2055389.jpg"
+              class="img-thumbnail pb-4"
+            />
+          </div>
+        </div>
+        <!--tercera fila de fotos terminada-->
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
